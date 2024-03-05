@@ -92,7 +92,7 @@ c.  Trong 3 kiểu lặp: while, do- while và for thì for là linh hoạt nh�
 d.  Một đoạn code bất kỳ sử dụng một trong 3 kiểu lặp while, do- while hoặc for thì nó cũng có thể được xây dựng bằng một trong hai kiểu lặp còn lại.
 e.  for là phép lặp “đếm” tự nhiên.
  
-Đáp án:
+Đáp án: d
 
 
 
@@ -182,7 +182,7 @@ b.      120   50  170
 c.       120   30  170
 d.      120   30  90
 
-Đáp án: d
+Đáp án: b
 
 
 
