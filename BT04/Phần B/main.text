@@ -54,7 +54,7 @@
 	iii.	[5] diễn tả độ dài của mảng a & [4] diễn tả chỉ số phần tử của mảng a
 	iv.	[5] diễn tả chỉ số phần tử của mảng a & [4] diễn tả độ dài của mảng a
 
-Đáp án: ii
+Đáp án: iii
 
 
 
@@ -64,7 +64,7 @@
 	iii.	Địa chỉ của phần tử đầu tiên của mảng được truyền
 	iv.	Số phần tử của mảng được truyền.
 
-Đáp án: i
+Đáp án: iii
 
 
 
@@ -74,7 +74,7 @@
 	iii.	Khi truyền mảng cho hàm, độ dài của mảng cũng cần được truyền theo
 	iv.	Tất cả các phát biểu trên
 
-Đáp án: iv
+Đáp án: i, ii
 
 
 
@@ -97,7 +97,7 @@
 	iii.	void clearBoard(char[][10] aChar);
 	iv.	void clearBoard(charaChar[][10]);
 
-Đáp án: if
+Đáp án: iii
 
 
 
@@ -155,7 +155,7 @@
 	iii.	7
 	iv.	8
 
-Đáp án: ii
+Đáp án: iii
 
 
 
@@ -165,7 +165,7 @@
 	iii.	for (i=0; i<50; i++) cout << a[i]*2 << endl;
 	iv.	tất cả các đoạn lệnh trên
 
-Đáp án: if
+Đáp án: i
 
 
 
@@ -175,7 +175,7 @@
 	iii.	int freq[256];
 	iv.	char freq[int];
 
-Đáp án: ii
+Đáp án: iii
 
 
 
@@ -189,7 +189,7 @@
 	iii.	copy(const char a1[], const char a2[], int size);
 	iv.	copy(char a1[], const char a2[], int size);
 
-Đáp án: i
+Đáp án: iii
 
 
 
