@@ -1,0 +1,189 @@
+(7)
+Tác dụng của lệnh return là gì?
+A. Dùng khi muốn thoát khỏi hàm
+B. Trả lại kết quả cho hàm
+C. Bắt buộc phải có trong hàm
+D. Cả A và B
+Đáp án: D
+
+(8)
+Có thể truyền vào bao nhiêu đối số trong một hàm?
+A. Bao nhiêu cũng được.
+B. Ít nhất là 1.
+C. Nhiều nhất là 10.
+D. Chỉ duy nhất 1.
+Đáp án: A
+
+(9)
+Khai báo prototype nào sau đây là không hợp lệ?
+A. int funct(char x, char y);
+B. double funct(char x)
+C. void funct();
+D. char x();
+Đáp án: D
+
+
+(10)
+Kiểu trả về của hàm với prototype: "int func(char x, float v, double t);" là:
+A. char
+B. int
+C. float
+D. double
+Đáp án: B
+
+(11)
+Lời gọi hàm nào sau đây là hợp lệ (giả sử hàm đấy tồn tại)?
+A. funct;
+B. funct x, y;
+C. funct();
+D. int funct();
+Đáp án: C
+
+(12)
+Đâu là định nghĩa một hàm hoàn chỉnh?
+A. int funct();
+B. int funct(int x) {return x=x+1;}
+C. void funct(int) {cout<<"Hello"}
+D. void funct(int) {cout<<"Hello"}
+Đáp án: B
+
+(13)
+Giả sử một hàm tên là function1 có một biến tên là sam được khai báo bên trong định nghĩa hàm function1, và một hàm tên là function2 
+cũng có một biến tên là sam được khai báo bên trong định nghĩa của function2. Điều gì sẽ xảy ra khi chạy chương trình 
+(giả thiết mọi thứ khác đều ổn):
+A. Không biên dịch được;
+B. Biên dịch được nhưng không chạy được;
+C. Chạy được nhưng sẽ gặp lỗi logic không mong muốn;
+D. Chạy đúng như mong muốn;
+Đáp án: D (sam chỉ là biến local)
+
+(14)
+Cho biết kết quả của đoạn code sau:
+#include <iostream>
+void display (int k)
+{
+  int j;
+  std::cout << “Hello” << std::endl;
+}
+int main(int argc, char** argv)
+{
+  int s;
+  display(s);
+
+  return 0;
+}
+A. Chương trình gặp lỗi biên dịch vì 2 biến s, k không giống nhau
+B. Chương trình gặp lỗi biên dịch vì 2 biến s, k không được khởi tạo trước khi truyền cho hàm
+C. Chương trình biên dịch thành công nhưng gặp lỗi khi chạy vì 2 biến s, k không giống nhau
+D. Chương trình biên dịch thành công và kết quả khi chạy là : Hello
+Đáp án: D
+
+(15)
+Đoạn code sau in ra kết quả như thế nào?
+#include <iostream>
+int foo(int y);
+int foo(int x)
+{
+  return x+1;
+}
+int main(int argc, char** argv)
+{
+  int x = 3;
+  int y = 6;
+
+  std::cout << foo(x) << std::endl;
+
+  return 0;
+}
+A. 3
+B. 4
+C. 9
+D. Lỗi
+Đáp án: B
+
+(16)
+Hàm inline được định nghĩa trong
+A. Thời gian chạy
+B. Thời gian biên dịch
+C. Tùy vào nó được gọi khi nào
+D. Cả B và C
+Đáp án: B
+Hàm inline được định nghĩa trong quá trình biên dịch. Khi bạn đánh dấu một hàm là inline, 
+trình biên dịch sẽ cố gắng nhúng mã của hàm đó trực tiếp vào nơi gọi hàm, thay vì tạo một bản sao của hàm trong mã máy. 
+Điều này xảy ra trong quá trình biên dịch, trước khi chương trình được thực thi
+
+(17)
+Nếu một hàm được viết để sử dụng trong một chương trình sẵn có thì nó có thể được đưa vào thư viện hàm 
+để các chương trình khác có thể sử dụng được
+A. Đúng
+B. Sai
+Đáp án: A
+
+(18)
+Số tham số và thứ tự các tham số thật phải đúng như các tham số hình thức trong khai báo hàm
+A. Đúng
+B. Sai
+Đáp án: A
+
+(19)
+Không cần chỉ định kiểu trả về của hàm khi hàm đó trả về kiểu dữ liệu nào sau đây:
+A. int
+B. void
+C. float
+D. char
+Đáp án: B
+
+(20)
+Định nghĩa hàm nào sau đây không hợp lệ
+A. void foo(){}
+B. void foo(void){}
+C. foo(void){}
+D. void foo{}
+Đáp án: D
+
+(21)
+Khi gọi hàm, các tham số được truyền vào phải giống các tham số hình thức ở
+A. Kiểu trả về
+B. Kiểu dữ liệu
+C. Tên
+D. Giá trị
+Đáp án: B
+
+(22)
+Nếu một hàm được gọi trước khi nó được định nghĩa thì điều kiện là gì?
+A. Kiểu trả về của hàm phải là kiểu void
+B. Kiểu đầu vào của hàm phải là kiểu void
+C. Trước khi gọi hàm nó phải được khai báo
+D. Không thể được.
+Đáp án: C
+
+(23)
+Hàm main() là một ví dụ về
+A. Hàm sơ cấp
+B. Hàm kiểu void
+C. Hàm do người dùng định nghĩa
+D. Hàm thư viện (pre-defined)
+Đáp án: C
+
+(24)
+Một hàm không trả về giá trị thì không thể có mặt trong biểu thức
+A. Đúng
+B. Sai
+Đáp án: B
+
+(25)
+Phát biểu nào sau đây là không đúng?
+A. Hàm có thể được định nghĩa trong hàm main()
+B. Hàm có thể được khai báo trong hàm main()
+C. Hàm có thể được gọi trước khi nó được định nghĩa
+Đáp án: D
+
+(26)
+Phát biểu nào sau đây về hàm main() là đúng
+A. Là hàm được khai báo đầu tiên khi thực hiện chương trình
+B. Là hàm luôn được gọi đầu tiên khi chương trình thực hiện
+C. Là hàm không được phép truyền tham số vào
+D. Là hàm có thể gọi bình thường như các hàm người dùng định nghĩa khác.
+Đáp án: D
+Hàm main() trong ngôn ngữ lập trình C và C++ là một hàm như bất kỳ hàm nào khác và có thể gọi như một hàm thông thường. 
+Hàm main() là điểm bắt đầu của chương trình và được gọi tự động khi chương trình được thực thi.
