@@ -20,7 +20,7 @@ A. int funct(char x, char y);
 B. double funct(char x)
 C. void funct();
 D. char x();
-Đáp án: D
+Đáp án: B
 
 
 (10)
@@ -119,6 +119,7 @@ A. Đúng
 B. Sai
 Đáp án: A
 
+
 (18)
 Số tham số và thứ tự các tham số thật phải đúng như các tham số hình thức trong khai báo hàm
 A. Đúng
@@ -169,13 +170,14 @@ D. Hàm thư viện (pre-defined)
 Một hàm không trả về giá trị thì không thể có mặt trong biểu thức
 A. Đúng
 B. Sai
-Đáp án: B
+Đáp án: A
 
 (25)
 Phát biểu nào sau đây là không đúng?
 A. Hàm có thể được định nghĩa trong hàm main()
 B. Hàm có thể được khai báo trong hàm main()
 C. Hàm có thể được gọi trước khi nó được định nghĩa
+D. Hàm chỉ có thể được định nghĩa bên ngoài main
 Đáp án: D
 
 (26)
@@ -184,6 +186,6 @@ A. Là hàm được khai báo đầu tiên khi thực hiện chương tr
 B. Là hàm luôn được gọi đầu tiên khi chương trình thực hiện
 C. Là hàm không được phép truyền tham số vào
 D. Là hàm có thể gọi bình thường như các hàm người dùng định nghĩa khác.
-Đáp án: D
+Đáp án: B
 Hàm main() trong ngôn ngữ lập trình C và C++ là một hàm như bất kỳ hàm nào khác và có thể gọi như một hàm thông thường. 
 Hàm main() là điểm bắt đầu của chương trình và được gọi tự động khi chương trình được thực thi.
