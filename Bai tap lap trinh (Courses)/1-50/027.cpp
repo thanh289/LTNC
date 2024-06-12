@@ -1,3 +1,5 @@
+//Hoàn thành các hàm in số phức, cộng số phức, so sánh số phức
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,16 +10,13 @@ struct Complex
 
 void print(const Complex& c)
 {
-    // Your code here
     if(c.a==0 && c.b == 0) cout<<0<<endl;
-    else if(c.a==0)
-    {
+    else if(c.a==0){
         if(c.b==1) cout<<"i"<<endl;
         else if(c.b==-1) cout<<"-i"<<endl;
         else cout<<c.b<<"i"<<endl;
     }
-    else if(c.b==0)
-    {
+    else if(c.b==0){
         cout<<c.a<<endl;
     }
     else
@@ -44,8 +43,8 @@ Complex add(const Complex& c1, const Complex &c2)
 int compare(const Complex& c1, const Complex &c2)
 {
     // Your code here
-    if(c1.a*c1.a+c1.b*c1.b == c2.a*c2.a+c2.b*c2.b) return 0;
-    
+    if(c1.a*c1.a+c1.b*c1.b == c2.a*c2.a+c2.b*c2.b) 
+        return 0;
     if(c1.a*c1.a+c1.b*c1.b < c2.a*c2.a+c2.b*c2.b)
         return -1;
     return 1;
@@ -66,3 +65,4 @@ int main()
     Complex c4 = {1, 2}, c5 = {1, 2};
     cout << compare(c4, c5);
 }
+

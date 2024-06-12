@@ -1,45 +1,32 @@
-#include <iostream>
-#include <fstream>
-#include <map>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
-
-int main() {
+int main(){
     string inputFile;
     cin>>inputFile;
     ifstream file(inputFile);
 
-
-    map<string, int> userCounts;
+    map<string, int> count;
     string line;
-    
 
-    while (file>>line) {
-        int t = line.size();
-        string userName = "";
-        for(int i=0; i<t; i++)
-        {
-            if(line[i] == ',')
-            {
-                for(int j=i+1; ; j++)
-                {
+    while(file>>line){
+        int n = line.size();
+        for(int i=0; i<n; i++){
+            if(line[i] == ','){
+                string name = "";
+                for(int j=i+1; j<n; j++){
                     if(line[j]=='@') break;
-                    userName += line[j];
-
+                    name += line[j];
                 }
-                break;
+                count[name]++;
             }
         }
-        userCounts[userName]++;
     }
 
     file.close();
 
-    for (auto& pair : userCounts) {
-        {
-            if(pair.second>1)
-                cout << pair.first << endl;
-        }
+    for(auto& x : count){
+        if(x.second >= 2)
+            cout<<x.first<<endl;
     }
 }

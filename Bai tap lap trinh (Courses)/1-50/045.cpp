@@ -1,3 +1,5 @@
+//Chuyển đổi một ma trận kề thành một danh sách kề đường đi giữa các thành phố
+
 #include <bits/stdc++.h>
 using namespace std;
 

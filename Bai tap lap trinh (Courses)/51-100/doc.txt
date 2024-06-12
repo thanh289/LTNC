@@ -1,4 +1,2 @@
-4,Nguyen Duy Cong
-6,Duong Ngoc Dang
-5,Tran Quy Dong
-5,Nguyen Van Dung
+1
+truong Dai hoc Cong nghe

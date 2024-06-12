@@ -8,59 +8,56 @@ struct Node
 };
 
 
+void printLinkedList(Node* head) {
+    Node* current = head;
+    while (current != NULL) {
+        cout << current->value << " ";
+        current = current->next;
+    }
+    cout << endl;
+}
+
+
 Node* insertHead(Node* head, int value) {
     Node* newNode = new Node;
     newNode->value = value; 
     newNode->next = head; 
-    return newNode; 
+    head = newNode;
+    return head; 
 }
 
 
 Node* deleteNode(Node* head, int pos)
 {
-    if (head == nullptr)
-        return nullptr;
+    if (head == NULL) 
+        return NULL;
 
-    if (pos == 0) {
+    if (pos == 0) { 
         Node* temp = head;
         head = head->next;
         delete temp;
         return head;
     }
-
     
-    Node* prev = nullptr;
-    Node* current = head;
-    int count = 0;
-    while (current != nullptr && count < pos) {
-        prev = current;
-        current = current->next;
-        count++;
+    Node* temp = head;
+    for(int i=0; i<=pos-2; i++){
+        if(temp->next->next != NULL)
+            temp = temp->next;
     }
-
-    // Xoá node tại vị trí pos nếu tìm thấy
-    if (current != nullptr) {
-        prev->next = current->next;
-        delete current;
-    }
-
+    
+    Node* del = temp->next;
+    temp->next = del->next;
+    delete del;
+    
     return head;
+
 }
 
 
-void printLinkedList(Node* head)
-{
-    while(head != nullptr)
-    {
-        cout<<head->value<<" ";
-        head = head->next;
-    }
-    cout<<endl;
-}
 
 int main()
 {
-    Node* head = nullptr;
+    Node* head = NULL;
 
     head = insertHead(head, 3);
     head = insertHead(head, 7);

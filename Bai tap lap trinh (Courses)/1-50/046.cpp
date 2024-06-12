@@ -1,3 +1,5 @@
+//Đọc file, in ra số lượng các số, giá trị lớn nhất, giá trị nhỏ nhất và tổng của các số đó.
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -5,13 +7,13 @@ using namespace std;
 void fixProblem(vector<int> a) {
     sort(a.begin(), a.end());
     int n = a.size();
-    cout<<a.size()<<endl;
-    cout<<a[0]<<endl;
-    cout<<a[n-1]<<endl;
+    cout<<a.size()<<" ";
+    cout<<a[0]<<" ";
+    cout<<a[n-1]<<" ";
 
     int sum = 0;
     for(int i=0; i<n; i++) sum+=a[i];
-    cout<<sum<<endl;
+    cout<<sum<<" ";
 
     
 }

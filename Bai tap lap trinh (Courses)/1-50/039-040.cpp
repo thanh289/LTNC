@@ -1,3 +1,6 @@
+//Hoàn thành deleteDuplicates
+//Hoàn thành printReverse
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,38 +10,49 @@ struct Node
     Node *next;
 };
 
-Node* insert(Node* head, int value)
-{
-    Node* newNode = new Node;
-    newNode->value = value;
-    newNode->next = nullptr;
-
-    if(head == nullptr || value < head->value)
-    {
-        newNode->next = head;
-        return newNode;
-    }
-
+void printLinkedList(Node* head) {
     Node* current = head;
-    while(current->next != nullptr && current->next->value < value)
-    {
+    while (current != NULL) {
+        cout << current->value << " ";
         current = current->next;
     }
+    cout << endl;
+}
+
+Node* insert(Node* head, int value)
+{
+    Node* newNode = new Node; 
+    newNode->value = value; 
+    newNode->next = NULL; 
+
+    if (head == NULL || value < head->value) {
+        newNode->next = head;
+        head = newNode;
+        return head; 
+    }
+
+    
+    Node* current = head;
+    while (current->next != NULL && current->next->value < value) {
+        current = current->next;
+    }
+
     newNode->next = current->next;
     current->next = newNode;
-    
-    return head;
+
+    return head; 
 }
+
 
 Node* deleteDuplicates(Node* head)
 {
-    if (head == nullptr || head->next == nullptr)
+    if (head == NULL || head->next == NULL)
         return head;
 
     Node* current = head->next;
     Node* prev = head;
 
-    while(current!= nullptr)
+    while(current!= NULL)
     {   
         if(prev->value == current->value)
         {
@@ -56,18 +70,9 @@ Node* deleteDuplicates(Node* head)
     return head;
 }
 
-void printLinkedList(Node* head)
-{
-    while(head != nullptr)
-    {
-        cout<<head->value<<" ";
-        head = head->next;
-    }
-    cout<<endl;
-}
 
 void printReverse(Node* head) {
-    if (head == nullptr)
+    if (head == NULL)
         return;
     printReverse(head->next);
     cout << head->value << " ";
@@ -75,8 +80,7 @@ void printReverse(Node* head) {
 
 int main()
 {
-    Node* head = nullptr;
-
+    Node* head = NULL;
     head = insert(head, 3);
     head = insert(head, 7);
     head = insert(head, 5);
@@ -85,6 +89,9 @@ int main()
     head = insert(head, 2);
     head = insert(head, 1);
     head = insert(head, 7);
+    head = insert(head, 3);
+
+    printLinkedList(head);
     head = deleteDuplicates(head);
     printLinkedList(head);
     printReverse(head);

@@ -1,3 +1,6 @@
+//In ra tất cả chuỗi nhị phân có độ dài n
+//Tính chất: đổi tất cả các số từ 0->2^n thành nhị phân
+
 #include <iostream>
 #include <math.h>
  
@@ -11,8 +14,10 @@ string decToBin(int n){
         ans = char (n % 2 + '0') + ans;
         n /= 2;
     }
-    while (ans.length() < N)
-        ans = "0" + ans;
+    int t = ans.length();
+    while (t < N){
+        ans = "0" + ans; t++;
+    }
     return ans;
 }
  
