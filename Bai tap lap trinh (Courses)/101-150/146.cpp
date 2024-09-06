@@ -1,3 +1,5 @@
+//Viết chương trình in ra tất cả mật khẩu từ một tập các kí tự.
+//Các kí tự trong tập hợp có thể không được dùng lần nào hoặc nếu dùng thì mỗi kí tự chỉ được dùng 1 lần.
 #include <bits/stdc++.h>
 using namespace std;
 

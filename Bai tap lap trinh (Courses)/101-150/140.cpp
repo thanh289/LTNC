@@ -9,29 +9,30 @@ void print(vector<int> v){
     cout<<endl;
 }
 
-void printElement(int n, vector<int> save){
-    int sum = 0; int x = save.size();
-    for(int i=0; i<x; i++)
-        sum += save[i]; 
-    if(sum == n){
-        print(save);
-        return;
-    }
-    if(sum>n) return;
+void printElement(int n, vector<int> ans){
 
-    for(int i=n-1; i>=1; i--){
-        if(save.empty() || (!save.empty() && save.back() >= i))
-            save.push_back(i);
+    int sum = 0, t = ans.size();
+
+    for(int i=0; i<t; i++)
+        sum += ans[i];
+
+    if(sum == n){
+        print(ans); return;
+    }
+    if(sum > n) return;
+
+
+    for(int i=n; i>=1; i--){
+        if(ans.empty() || (!ans.empty() && ans.back() >= i))
+            ans.push_back(i);
         else continue;
-        printElement(n, save);
-        save.pop_back();
+        printElement(n, ans);
+        ans.pop_back();
     }
 }
-
 
 int main(){
     int n; cin>>n;
     vector<int> ans;
-    cout<<n<<endl;
     printElement(n, ans);
 }

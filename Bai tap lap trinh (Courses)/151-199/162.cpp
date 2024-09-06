@@ -1,3 +1,5 @@
+//In ra tam giác pascal
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -3,7 +3,7 @@ using namespace std;
 
 int n, k;
 
-void print(int count, string s, string &ans){
+void print(int count, string s, string ans){
     int x = s.length();
 
     if(x==0){
@@ -36,9 +36,8 @@ int main(){
     string s = "";
     for(int i=0; i<n; i++)
         s += 'a' + i;
-    string ans = "";
 
-    print(k, s, ans);
+    print(k, s, "");
     
 
 }

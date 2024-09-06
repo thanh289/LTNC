@@ -1,3 +1,5 @@
+//Viết chương trình sinh ra tất cả mật khẩu từ một tập các kí tự. Các kí tự trong tập hợp có thể không được dùng lần nào hoặc dùng nhiều lần.
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,4 @@
+//Viết chương trình liệt kê tất cả các chuỗi nhị phân có độ dài n chữ số 0 và m chữ số 1
 #include <iostream>
 #include <string>
 using namespace std;

@@ -1,3 +1,10 @@
+/*
+Viết chương trình liệt kê tất cả các từ độ dài 2 hoặc 3 
+theo thứ tự từ điển của ngôn ngữ X
+
+Giới hạn: có tối đa 25 chữ cái là các chữ cái a..z hoặc chữ số 0..9
+.*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
